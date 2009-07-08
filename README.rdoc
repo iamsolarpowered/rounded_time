@@ -1,0 +1,16 @@
+=Rounded Time
+
+Simple plugin to round time. Defaults to the nearest minute (i.e. <code>Time.now.round == Time.now.round(60.seconds) == Time.now.round(1.minute)</code>.
+
+==Example
+
+  t = Time.parse("7:35")  #=> Wed Jul 08 07:35:00 -0400 2009
+  t.round(15.minutes)     #=> Wed Jul 08 07:30:00 -0400 2009
+
+==Installation
+
+  script/plugin install git://github.com/iamsolarpowered/rounded_time.git
+
+==Legal
+
+Copyright (c) 2009 Ben Shymkiw, released under the MIT license
